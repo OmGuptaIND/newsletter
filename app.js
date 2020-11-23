@@ -36,7 +36,7 @@ app.post('/',function(req,res){
   const url="https://us2.api.mailchimp.com/3.0/lists/328a908442";
   const options={
     method:'POST',
-    auth:'ragnar_newsletter:a384d0b327ccbc8ae011ca99f9784dc51-us2',
+    auth:"API KEY",
   }
 
   const request=https.request(url,options,function(response){
@@ -69,7 +69,3 @@ app.listen(process.env.PORT || 3000,function(){
   console.log("Server Started At port");
 })
 
-
-
-// API KEY:384d0b327ccbc8ae011ca99f9784dc51-us2
-// userId:328a908442
